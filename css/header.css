@@ -34,6 +34,8 @@ input[type="checkbox"]:checked ~ nav {
 .list-links li a {
   color: var(--text-secondary-color);
   text-decoration: none;
+  font-size: 24px;
+  font-weight: var(--menu-text-weight);
 }
 
 .list-links {
@@ -42,4 +44,30 @@ input[type="checkbox"]:checked ~ nav {
 
 .list-links li {
   margin: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__navegacao {
+    margin-top: 0;
+    width: 467px;
+  }
+
+  .header__navegacao label {
+    display: none;
+  }
+
+  .header__navegacao nav {
+    display: block;
+  }
+
+  .header__navegacao ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .header__navegacao li {
+    margin: 0;
+  }
 }
