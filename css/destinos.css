@@ -1,0 +1,63 @@
+.destinos {
+  margin-top: 50px;
+}
+
+.destinos .item {
+  padding: 24px;
+}
+.destinos .item header {
+  display: block;
+  position: static;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.destinos .item footer {
+  text-align: center;
+}
+
+.destinos .item .tokyo .img-item {
+  background: url(../img/Tokyo-mobile.jpg);
+  background-size: cover;
+  width: auto;
+  height: 360px;
+}
+.destinos .item .osaka .img-item {
+  background: url(../img/Osaka-mobile.jpg);
+  background-size: cover;
+  
+  width: auto;
+  height: 360px;
+}
+
+.destinos .item h4 {
+  font-size: 28px;
+}
+
+.destinos .item p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .destinos .item .tokyo .img-item {
+    background: url(../img/Tokyo-tablet-desk.jpg);
+    background-size: cover;
+    height: 452px;
+    background-repeat: no-repeat;
+  }
+  .destinos .item .osaka .img-item {
+    background: url(../img/Osaka-tablet-desk.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 452px;
+    background-repeat: no-repeat;
+  }
+}
+@media  screen and (min-width: 1440px) {
+    .destinos-items{
+    display: flex;
+}
+}
