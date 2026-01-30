@@ -1,0 +1,81 @@
+.categorias {
+  margin-top: 50px;
+}
+.categorias .section-title {
+  width: 290px;
+  height: 98px;
+  margin: 0 auto;
+}
+.categorias-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.categorias-card .card {
+  width: 312px;
+  height: 220px;
+  text-align: center;
+  text-decoration: none;
+  padding: 24px 16px;
+  color: var(--text-primary-color);
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: var(--background-secondary-color);
+}
+
+.categorias-card .card h3 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 8px 0 0;
+}
+
+.categorias-card .card.single-line {
+  padding-top: 50px;
+}
+.categorias-card .card.single-line.transfer img {
+  margin: 10px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .categorias-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .categorias-card .card.single-line.transfer img {
+    margin: 12px 0 20px;
+  }
+  .categorias .section-title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .categorias-card {
+    margin: 0 auto;
+  }
+  .categorias-card .card {
+    width: 420px;
+  }
+
+  .categorias-card .card.pacotes-internacionais{
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .categorias-card .card {
+    width: 240px;
+  }
+}
+
+@media screen and(min-width: 1800px) {
+  .categorias-card {
+    width: 1550px;
+    margin: 0 auto;
+  }
+}
