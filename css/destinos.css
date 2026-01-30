@@ -1,0 +1,11 @@
+.destinos {
+  margin-top: 50px;
+}
+
+.destinos .item header {
+  display: block;
+  position: static;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 24px;
+}
