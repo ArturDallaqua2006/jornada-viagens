@@ -1,0 +1,63 @@
+.pagamentos .content-container .img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.pagamentos .content-container {
+  display: flex;
+}
+.pagamentos .content-container .img-gallery .large {
+  grid-column: span 2;
+}
+
+.pagamentos .content-container .img-gallery .text-content {
+  padding: 24px;
+}
+
+.pagamentos .content-container .img-gallery .image-bag {
+  background: url(../img/bag-mobile.png);
+  background-size: cover;
+}
+
+.pagamentos .content-container .img-gallery .image-passport {
+  background: url(../img/passport-mobile.png);
+  background-size: cover;
+}
+
+.pagamentos .content-container .img-gallery .image-people {
+  background: url(../img/people-mobile.png);
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .pagamentos .content-container .img-gallery .image-bag {
+    background: url(../img/bag-desktop.png) no-repeat;
+    background-size: cover;
+  }
+
+  .pagamentos .content-container .img-gallery .image-passport {
+    background: url(../img/passport-desktop.png) no-repeat;
+    background-size: cover;
+  }
+
+  .pagamentos .content-container .img-gallery .image-people {
+    background: url(../img/people-desktop.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pagamentos .content-container {
+    justify-content: space-between;
+  }
+  .pagamentos .content-container .text-content {
+    width: 360px;
+  }
+  .pagamentos .content-container .img-gallery {
+    width: 790px;
+  }
+}
